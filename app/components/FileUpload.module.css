@@ -1,0 +1,133 @@
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.card {
+  border: 2px dashed #e5e7eb;
+  border-radius: 8px;
+  padding: 24px;
+  text-align: center;
+  background-color: #f9fafb;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  border-color: #3b82f6;
+  background-color: #eff6ff;
+}
+
+.card.dragOver {
+  border-color: #3b82f6;
+  background-color: #dbeafe;
+}
+
+.card.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.card.disabled:hover {
+  border-color: #e5e7eb;
+  background-color: #f9fafb;
+}
+
+.uploadIcon {
+  width: 48px;
+  height: 48px;
+  color: #6b7280;
+  margin: 0 auto 16px;
+}
+
+.uploadText {
+  font-size: 18px;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 8px;
+}
+
+.uploadSubtext {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 16px;
+}
+
+.browseButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.browseButton:hover {
+  background-color: #2563eb;
+}
+
+.browseButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.fileInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  background-color: #f3f4f6;
+  border-radius: 6px;
+  margin-top: 16px;
+}
+
+.fileDetails {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.fileIcon {
+  width: 24px;
+  height: 24px;
+  color: #3b82f6;
+}
+
+.fileName {
+  font-weight: 500;
+  color: #374151;
+}
+
+.fileSize {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.removeButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.removeButton:hover {
+  background-color: #dc2626;
+}
+
+.hiddenInput {
+  display: none;
+}

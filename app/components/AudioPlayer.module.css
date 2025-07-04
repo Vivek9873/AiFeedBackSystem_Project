@@ -1,0 +1,124 @@
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 16px;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.playButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.playButton:hover {
+  background-color: #2563eb;
+}
+
+.playButton:disabled {
+  background-color: #94a3b8;
+  cursor: not-allowed;
+}
+
+.timeDisplay {
+  font-size: 14px;
+  color: #64748b;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  min-width: 80px;
+}
+
+.progressContainer {
+  flex: 1;
+  height: 6px;
+  background-color: #e2e8f0;
+  border-radius: 3px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.progressBar {
+  height: 100%;
+  background-color: #3b82f6;
+  transition: width 0.1s linear;
+}
+
+.volumeContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.volumeButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: none;
+  border: none;
+  color: #64748b;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: color 0.2s;
+}
+
+.volumeButton:hover {
+  color: #3b82f6;
+}
+
+.volumeSlider {
+  width: 80px;
+  height: 4px;
+  background-color: #e2e8f0;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+.volumeSlider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  background-color: #3b82f6;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.volumeSlider::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  background-color: #3b82f6;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+}
+
+.hiddenAudio {
+  display: none;
+}
